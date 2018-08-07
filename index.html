@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Leonel Navarro</title>
+	<link rel="shortcut icon" href="img/Icon.png" />
+	
+	<!-- Estilos CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-submenu.min.css">
+	<link rel="stylesheet" href="css/stlymenu.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link rel="stylesheet" href="css/hover-min.css">
+	
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/bootstrap-submenu.min.js" defer></script>
+	<script src="js/lightbox.js"></script>
+	
+	<script	type = "text/javascript">
+		$(function(){
+                    $('a.mennu').click(function(e){
+                            e.preventDefault();
+                            var div = $(this).data('href');
+                            var y = $(div).offset().top - 70;
+                            $('body,html').stop(true,true).animate({                                
+                                    scrollTop: y
+                            },1000);
+                    });
+            });
+	</script>
+	
+</head>
+
+<body id = "inicio">
+	<!-- Menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: white;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style = "background-color: black"></span>
+                    <span class="icon-bar" style = "background-color: black"></span>
+                    <span class="icon-bar" style = "background-color: black"></span>
+                </button>
+                <a class="titulogo"  style = "text-decoration: none" href="#"><img src ="img/logobrand.png" width = "50px" height = "50px"></img></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a data-href='#inicio' class= "mennu hvr-bounce-to-top" href='#inicio' style= "color: black;">INICIO</a>
+                    </li>
+					<li>
+                        <a data-href='#contacto' class= "mennu hvr-bounce-to-top" href='#contacto' style= "color: black;">PROPÓSITO</a>
+                    </li>
+                    <li>
+                        <a data-href='#biografia' class= "mennu hvr-bounce-to-top" href='#biografia' style= "color: black;">BIOGRAFÍA</a>
+                    </li>
+                    <li>
+                        <a data-href='#referencias' class= "mennu hvr-bounce-to-top" href='#referencias' style= "color: black;">REFERENCIAS</a>
+                    </li>
+                    <li>
+						<a data-href='#publicaciones' class= "mennu hvr-bounce-to-top" href='#publicaciones' style= "color: black;">PUBLICACIONES</a>
+					</li>
+					<li>
+                        <a data-href='#conferencias' class= "mennu hvr-bounce-to-top" href='#conferencias' style= "color: black;">CONFERENCIAS</a>
+                    </li>
+					<li>
+                        <a data-href='#videos' class= "mennu hvr-bounce-to-top" href='#videos' style= "color: black;">VIDEOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br /><br /><br /><br />
+ 	
+	<!-- Carrousel imagenes principales -->
+	<div class = "container">
+		<div class = "row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="10"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="11"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img class="slide-image" src="img/slides/1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/3.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/4.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/5.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/6.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/7.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/8.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/9.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/10.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/11.jpg" alt="">
+						</div>
+						<div class="item">
+							<img class="slide-image" src="img/slides/12.jpg" alt="">
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+		</div>
+	</div><br /><br />
+	
+	<section style = "background-color: black;">
+		<div class = "container" id = "proposito">
+			<div class = "row">
+				<div class = "col-md-4"><br /><h1 style = "text-align: left; color: #bababa; font-size: 1.8em;">Propósito</h1>
+				<hr style="position:relative; float: left; border:solid  #ffffff; line-height: 3px; width: 50px; margin-bottom: 0px; margin-top: 0px;"></hr></div>
+				<div class = "col-md-4"></div>
+				<div class = "col-md-4"></div>
+			</div>
+		<br /> <br />
+			<div class = "row">
+				<div class = "col-md-12">
+					<div class = "caption">
+						<p style = "color: white; font-size: 14px; text-align: justify;">Vivimos una serie de retos globales y al interior del país que generan nuevas oportunidades para las nuevas generaciones. Con una visión clara, compromiso, disciplina y mucha autodeterminación podemos ayudar a estas nuevas generaciones a tener una mejor calidad de vida.<br /><br />
+ 
+Cuando llegué a la Ciudad de Aguascalientes, una ciudad que no conocía, lo hice con muy poco dinero y una maleta con poca ropa, aún recuerdo cuando bajé del autobús. Quince años después, he viajado a lugares que jamás imagine y conocido a personalidades increíbles.<br /><br />
+ 
+Me doy cuenta que, en realidad no necesitas nacer con talentos extraordinarios, en una familia rica o influyente para poder formar un patrimonio si realmente quieres.<br /><br />
+ 
+Hoy decido poner mi granito de arena donando mi tiempo para compartir mi experiencia personal y profesional para inspirar y motivar a las nuevas generaciones, a través de los distintos foros del sector privado, el sector gubernamental y también el sector educativo en México.<br /><br />
+ 
+Con más de dieciséis años de experiencia y participando en conferencias en México, Estados Unidos, Europa, Medio Oriento, Sudamérica y Centroamérica, puedo apoyarte impartiendo una conferencia en tu organización, escuela, y/o evento sobre tres áreas que me apasionan:<br /><br />
+ 
+<b>• Transformación Digital :</b> El futuro de la tecnología y las oportunidades en México.<br />
+<b>• Ciberseguridad :</b> Un camino para el emprendimiento tecnológico en México.<br />
+<b>• Autodeterminación:</b> El ingrediente clave para construir tu futuro.<br /><br />
+ 
+Si sólo puedo influir en una sola persona para que tenga un mejor futuro, habré cumplido mi propósito.<br /> <br />
+						
+						Leonel Navarro</p>
+					</div>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-4">
+					<a href = "contacto@leonelnavarro.com"><p style = "color: #58c6f9; font-size: 14px;"><b>contacto@leonelnavarro.com</b></p></a>
+				</div>
+				<div class = "col-md-4"></div>
+				<div class = "col-md-2"></div>
+				<div class = "col-md-2">
+					<a href = "https://www.facebook.com/leonelnavarros/"><img src = "img/facebook_logo.png" style = "height: 50px; width: 50px;"></img></a>
+					<a href = "https://twitter.com/LeonelNavarroS"><img src = "img/twitter_logo.png" style = "height: 50px; width: 50px;"></img></a>
+				</div>
+			</div>
+		</div><br />
+	</section>
+
+                </div>	
+	<div class = "container"  id ="biografia">
+		<div class = "row">
+		<br /><h1 style = "color: #58595b; font-size: 1.4em; margin-bottom: 0px;">Biografía</h1>
+			
+			<hr style="position:relative; float: left; border:solid  #3a3a3a; line-height: 3px; width: 50px; margin-bottom: 0px;"></hr><br /><br />
+			<p style = "color: black; font-size: 16px; margin-bottom: 15px;">
+			<b>Leonel Navarro Segura <br /></b></p>
+
+			<p style = "color: black; font-size: 12px; text-align: justify;">
+			Leonel posee una Licenciatura en Sistemas Electrónicos del Tec de Monterrey Campus Ciudad de México, el certificado de administración de proyectos con doble grado por el Tec de Monterrey Campus Aguascalientes y por la Universidad de Houston, el diplomado de habilidades gerenciales y de desarrollo de equipos de alto rendimiento por la Universidad Autónoma de Aguascalientes y actualmente cursa el programa de perfeccionamiento de alta dirección D1 en el IPADE.<br /><br />
+ 
+			Leonel está certificado como Project Management Professional (PMP) por PMI, Certified Information Systems Security Professional (CISSP) por ISC2, Certified Information Security Management (CISM) por ISACA, Six Sigma Green Belt por GE y avalado por “British Standards Institute” como líder auditor del estándar ISO27001 versión 2013.<br /><br />
+			 
+			Sus más de diecisiete años de experiencia internacional en operaciones de Tecnología de Información con equipos basados en México, Estados Unidos, Europa, India, y China, de los cuales se desempeño tres años como Gerente de Programas de TI en el corporativo de General Electric en Fairfield, CT, en conjunto con la experiencia de proyectos de alta criticidad, lo habilitan para realizar la coordinación de Operaciones, Diseño de Soluciones, Administración de Producto y Alianzas Estratégicas.<br /><br />
+			 
+			Actualmente se desempeña como Líder Global de la Práctica de Seguridad de Información en Softtek, en donde supervisa la entrega de servicios administrados de seguridad de información y diseño de productos de seguridad para Softtek. Ha participado como expositor invitado en varias conferencias y ha publicado varios artículos técnicos sobre el ramo, durante 2011 recibió la nominación a los premios de Liderazgo en Seguridad de Información para Latinoamérica organizados por ISC2 y en el 2014 fue incluido en la edición especial de la revista CNN Expansión entre el selecto grupo de los “30 promesas en los 30”.
+			</p>
+		</div>
+	</div>
+	
+	<div class = "container" id = "referencias">
+		<div class = "row">
+			<br /><h1 style = "color: #58595b; font-size: 1.4em; margin-bottom: 0px;">Referencias</h1>
+			<hr style="position:relative; float: left; border:solid  #000000; line-height: 3px; width: 50px; margin-bottom: 0px;"></hr><br /><br />
+				<p style = "color: black; font-size: 12px; margin-bottom: 15px; text-align: justify">“Leo is a great guy! He simply outperforms ALWAYS ! He definitely was one of my Top Performers by results and values. He is a visionary and devotes all his strengths to get the confidence of his customer based on results and execution. I really like his entrepreneurial spirit as well as his leadership way to motivate his team.”<br />
+				<b><a href = "https://www.linkedin.com/in/davidrafaelpmp/">David Rafael Cervantes, VP Operations</a></b><br /><br />
+
+				“Trabajo con Leonel con frecuencia pidiendo apoyo a la practica que el lidera de Seguridad en nuestra Compañía Softtek. Leonel siempre demuestra pasión, entusiasmo, estar actualizado con lo último en la práctica que lidera. Y dar soluciones flexibles que se adaptan a las necesidades de nuestros clientes.Es eficaz, ágil en sus respuestas e innovador en sus planteamientos. Es un placer trabajar con un profesional así.”<br />
+				<b><a href = "https://www.linkedin.com/in/elena-marcos-bueno-590283a/">Elena Marcos Bueno, Directora de Estrategia y Comunicación Corporativa</a></b><br /><br />
+
+				“Leo is an extremelly reliable manager, with high technical knowledge, who is always looking to improve the service his team offers with an extremelly possitive attitude. I was always impressed by the maturity that his team reached in only two years in which we worked closely.”<br />
+				<b><a href = "https://www.linkedin.com/in/nazpiri/">Naiara Azpiri, VP Sales and Marketing</a></b><br /><br />
+
+				“I have known Leonel for over 6 years and have work with him directly for 3 years. Although we have been in different groups within GE, in all my interactions and work where Leonel has taken a part, he has been the consummate professional and team player who is dedicated to the successful completion of the task at hand. Leonel has demonstrated sharp problem solving capability and is a clear and effective communicator making him a valuable addition to any team needing those attributes and skill sets. I highly recommend Leonel for any role he is a candidate for.” <br />
+				<b><a href = "https://www.linkedin.com/in/michael-pan-b116418/">Michael Pan, Principal, Client Services</a></b><br /><br />
+				
+				“Leonel is a dedicated leader, a very positive person and he always tries to keep the synergy on the team without losing the main goal on the projects. He is always enthusiastic with new challenges and he is truly committed with his team. I’d gladly recommend him anytime.”<br />
+				<b><a href = "https://www.linkedin.com/in/marcelav/">Marcela Valdes, SDET II</a></b><br /><br />
+
+				“Leo managed team of consultants for our project for trade request application. He is responsive, reliable and has excellent working ethics, organizational skills and technical expertise. I highly recommend Leonel on any position, he will bring tremendous quality/value to your organization.” <br />
+				<b><a href = "https://www.linkedin.com/in/sophiastravel/">Sophia Kulich, Owner</a></b><br /><br />
+
+				“LeoN (Leonel Navarro) was my Operations lead and a result-oriented manager. He had set a clear-cut objectives for us to work which in turn enabled us to provide efficient and effective services to our clients across the company. Guided us in our difficult times and appreciated us when it mattered the most. Working with Leo has been a pleasure and I would like to recommend Leo any-day anytime.”<br />
+				<b><a href = "https://www.linkedin.com/in/subodhsawant/">Subodh Sawant, Application Security Architect</a></b><br /><br />
+
+				“Leonel has always been a very enthusiastic person with a go-get but also a go-give attitude..!! A pleasure to work with...”<br />
+				<b><a href = "https://www.linkedin.com/in/ilgalvezh/">Iván Galvez, Managing Partner, CEO</a></b><br /><br />
+
+				“Leo is a very good manager and leader. He is always looking for ways to improve how his teams work; he has a sharp eye for new opportunities and is results-oriented. He really cares about people and challenges everyone to help them grow. His energy and passion is contagious and motivating.”<br />
+				<b><a href = "https://www.linkedin.com/in/miguelperezmilicua/">Miguel Perez-Milicua, Information Security Practice Specialist</a></b><br /><br />
+
+				“Leo is a seasoned leader with exceptional skills in people management and execution skill combined with his expertise in Application Security domain. He is good in delivery management and solutioning. He brings in lot of value to the table for his company and his clients. Great guy to work with.”<br />
+				<b><a href = "https://www.linkedin.com/in/bithal-bhardwaj-622a523/">Bithal Bhardwaj, Chief Information Security Officer</a></b><br /><br />
+
+				“Leonel has a unique ability to add passion and positivism in everything he works on, his range of knowledge goes from specific technical matters, to high skilled project management, especially in Information Security. His vision has no limits and he always gives a boost to his employees and co-workers.”<br />
+				<b><a href = "https://www.linkedin.com/in/komazoimamura/">Roberto Komazo Imamura, Global IT Governance Manager</a></b><br /><br />
+				</p>
+		</div>
+	</div>
+	
+	<div class = "container" id = "publicaciones">
+		<div class = "row">
+			<br /><h1 style = "color: #58595b; font-size: 1.4em">Publicaciones</h1>
+			<hr style="position:relative; float: left; border:solid  #000000; line-height: 3px; width: 50px; margin-bottom: 0px;"></hr><br /><br />
+			<div class="table-responsive">
+				<table class = "table" style = "background-color: white; font-size: 12px;">
+					<thead style = "color: white; background-color: black;">
+						<tr>
+							<th>Fuente</th>
+							<th>Descripción</th>
+							<th>Fecha</th>
+						</tr>
+					</thead>
+						<tr>
+							<td><b><a href = "http://www.liderempresarial.com/deinteres/leonel-navarro-director-de-la-practica-global-de-seguridad-de-la-informacion-en-softtek/">Expansión</a></b></td>
+							<td>Las 30 promesas 2014</td>
+							<td>Agosto 22 2016</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.banktech.com/4-keys-to-more-holistic-it-security/a/d-id/1294812">Líder Empresarial</a></b></td>
+							<td>El directivo de Softtek que colecciona postales de lugares</td>
+							<td>Agosto 22 2016</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/state-of-the-art-supplier-security-review-supplier-security-a-risk-audit">Softtek</a></b></td>
+							<td>State-of-the-Art Supplier Security Review / Supplier Security & Risk Audit</td>
+							<td>Julio 18 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/6-proven-practices-for-organizations-to-avoid-a-security-breach">Softtek</a></b></td>
+							<td>6 Proven Practices for Organizations to Avoid a Security Breach</td>
+							<td>Julio 18 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://expansion.mx/videos/2014/04/25/las-30-promesas-2014-de-expansion-leonel-navarro">Líder Empresarial</a></b></td>
+							<td>El directivo de Softtek que colecciona postales de lugares</td>
+							<td>Abril 27 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "www.itesm.mx/.../egresados/not%2823abril14%29promesas30">ITESM</a></b></td>
+							<td>Distinguen a egresados entre las 30 promesas en los 30</td>
+							<td>Abril 23 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://expansion.mx/especiales/2014/04/19/leonel-navarro-el-software-de-softtek">Expansión</a></b></td>
+							<td>El Software de Softek</td>
+							<td>Abril 17 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.engeeklopedia.com/2014/02/tu-informacion-en-la-red-esta-segura.html">Engeeklopedia</a></b></td>
+							<td>¿Tu información en la red está segura?</td>
+							<td>Febrero 13 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.elfinanciero.com.mx/empresas/protege-la-informacion-de-tu-empresa-y-clientes.html">El financiero</a></b></td>
+							<td>Protege la información de tu empresa y clientes</td>
+							<td>Febrero 12 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://gameover.vg/softtek-ofrece-apoyo-a-estudiantes-y-profesionales-mexicanos/">gameover.vg</a></b></td>
+							<td>Softtek ofrece apoyo a estudiantes y profesionales mexicanos</td>
+							<td>Febrero 4 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.infochannel.info/softtek-impulsa-actualizacion-academica-en-seguridad-de-informacion">INFO CHANNEL</a></b></td>
+							<td>Softtek impulsa actualización academia en seguridad de Información</td>
+							<td>Febrero 3 2014</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.softtek.com/es/sala-de-prensa/comunicados-de-prensa/apoya-softtek-la-actualizacion-de-una-nueva-generacion-de-ingenieros-de-software">Softtek</a></b></td>
+							<td>Apoya Softtek la actualización de una nueva generación de ingenieros de software</td>
+							<td>Enero 5 2014</td>
+						</tr>
+						<tr>
+							<td><b>IT Business Edge</b></td>
+							<td>Securing Your Cloud Environment</td>
+							<td>Octubre 21 2013</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/future-of-testing">Softtek</a></b></td>
+							<td>The Future of Testing</td>
+							<td>Julio 25 2013</td>
+						</tr>
+						<tr>
+							<td><b>IT Business Edge</b></td>
+							<td>BYOD: A Security Perspective</td>
+							<td>Julio 22 2013</td>
+						</tr>
+						<tr>
+							<td><b>IT Business Edge</b></td>
+							<td>Data Loss Prevention on the Cloud</td>
+							<td>Junio 18 2013</td>
+						</tr>
+						<tr>
+							<td><b>IT Business Edge</b></td>
+							<td>Lost in the Cloud: A Useful Checklist for Identity Management and IDaaS Integration</td>
+							<td>Mayo 6 2013</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/state-of-the-art-software-security">Softtek</a></b></td>
+							<td>State-of-the-Art Software Security - Statistical Review</td>
+							<td>Febrero 22 2013</td>
+						</tr>
+						<tr>
+							<td><b>IT Business Edge</b></td>
+							<td>Mobile Application Security: The Foundation for Tomorrow’s Digital Era</td>
+							<td>Enero 23 2013</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.nearshore.com/does-the-java-scare-got-you-thinking-about-your-security">Nearshore Blog</a></b></td>
+							<td>Does the Java scare got you thinking about your security</td>
+							<td>Enero 14 2013</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.enterprisenetworkingplanet.com/netsecur/pulling-your-private-cloud-out-of-the-shadows.html">Enterprise Networking Planet</a></b></td>
+							<td>Pulling Your Private Cloud out of the Shadows</td>
+							<td>Marzo 5 2012</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.liderempresarial.com/deinteres/leonel-navarro-director-de-la-practica-global-de-seguridad-de-la-informacion-en-softtek/">IT Business Edge</a></b></td>
+							<td>Keeping Watch: Advice for the CISO in Today's Tech Reality</td>
+							<td>Febrero 2 2012</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.liderempresarial.com/deinteres/leonel-navarro-director-de-la-practica-global-de-seguridad-de-la-informacion-en-softtek/">InformationWeek Bank Systems & Technology</a></b></td>
+							<td>4 Keys to More Holistic IT Security</td>
+							<td>Agosto 17 2011</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.ciodive.com/news/why-third-party-risk-is-worth-the-reward/436918/">Nearshore Blog Interview</a></b></td>
+							<td>IT Security is Global, So Let's Start Treating it that Way: Interview with Softtek's Security Ace</td>
+							<td>Agosto 11 2011</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/application-security-program-gaining-visibility-of-threats-through-metrics">Softtek</a></b></td>
+							<td>Application Security Program: Gaining Visibility of Threats through Metrics</td>
+							<td>Junio 1 2010</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://en.softtek.co/measuring-progress-in-applications">Softtek</a></b></td>
+							<td>Measuring Progress in Application Security</td>
+							<td>Febrero 1 2010</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "container" id = "conferencias">
+		<div class = "row">
+			<br /><h1 style = "color: #58595b; font-size: 1.4em">Conferencias</h1>
+			<hr style="position:relative; float: left; border:solid  #000000; line-height: 3px; width: 50px; margin-bottom: 0px;"></hr><br /><br />
+			<div class="table-responsive">
+				<table class = "table" style = "background-color: white; font-size: 10px;">
+					<thead style = "color: white; background-color: black;">
+						<tr>
+							<th>Nombre</th>
+							<th>Descripción</th>
+							<th>Fecha</th>
+							<th>Localidad</th>
+						</tr>
+					</thead>
+						<tr>
+							<td><b><a href = "http://www.scs-day.com/programa/">Supply Chain Security Day 2017</a></b></td>
+							<td>Estrategias de Seguridad en Informática para Cadenas de Internacionales de Suministro</td>
+							<td>Abril 20 2017</td>
+							<td>Monterrey, NL, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.bankingandretail.com.mx/?page_id=32">Banking & Retail</a></b></td>
+							<td>Forum Revolution Banking 2017 – Panel</td>
+							<td>Marzo 21 2017</td>
+							<td>Ciudad de México, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.rsaconference.com/videos/the-state-of-digital-supplier-risk-management-in-partners-we-trust">RSA Conference San Francisco 2017</a></b></td>
+							<td>The State of Digital Supplier Risk Management: In Partners We Trust</td>
+							<td>Febrero 15 2017</td>
+							<td>San Francisco, CA, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.rsaconference.com/videos/the-state-of-digital-supplier-risk-management-in-partners-we-trust">RSA Conference San Francisco 2017</a></b></td>
+							<td>RSA Conference San Francisco 2017</td>
+							<td>Febrero 15 2017</td>
+							<td>San Francisco, CA, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.rsaconference.com/videos/quick-look-maximizing-security-and-compliance-through-digital-third-party-risk-management">RSA Conference Abu Dhabi 2016</a></b></td>
+							<td>Quick Look: Maximizing security and compliance through Digital Third Party Risk Management</td>
+							<td>Noviembre 15 2016</td>
+							<td>Abu Dhabi, Emiratos Arabes Unidos</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://www.sig.org/global-summits">Sourcing Industry Group’s Carlsbad Global Executive Summit - 50th Edition</a></b></td>
+							<td>Maximizing Security and Compliance through Digital IT Service Provider Risk Management</td>
+							<td>Octubre 18 2016</td>
+							<td>San Diego, CA, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "www.foroindex2016.org.mx/14oct.pdf">Foro IndexNL 2016</a></b></td>
+							<td>Vulnerabilidad de los Sistemas de información y sus repercusiones en la cadena de suministro</td>
+							<td>Octubre 14 2016</td>
+							<td>Monterrey, NL, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://fieat.org/wp/ponencias/">Foro Internacional de emprendimiento en alta tecnología -  CONGRESO INTERNACIONAL FIEAT - CIMPS 2016</a></b></td>
+							<td>El rol de la seguridad de información en la transformación digital y el emprendedurismo</td>
+							<td>Octubre 13 2016</td>
+							<td>Aguascalientes, Ags, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://sg.com.mx/sgnext/agenda">SGNEXT: El Nuevo paradigma del desarrollo</a></b></td>
+							<td>El rol de la seguridad de información en la transformación digital</td>
+							<td>Agosto 31 2016</td>
+							<td>Ciudad de México, México</td>
+						</tr>
+						<tr>
+							<td><b>Universidad Panamericana</b></td>
+							<td>El rol de la seguridad de información en la transformación digital</td>
+							<td>Agosto 23 2016</td>
+							<td>Aguascalientes, Ags, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://rsatechfest.com/">RSA Tech Fest 2016</a></b></td>
+							<td>How to integrate financial feeds from non native external sources to Archer</td>
+							<td>Julio 10 2016</td>
+							<td>Orlando, FL, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://rsatechfest.com/">RSA Tech Fest 2016</a></b></td>
+							<td>Archer through Managed Services</td>
+							<td>Julio 10 2016</td>
+							<td>Orlando, FL, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://rsatechfest.com/">RSA Tech Fest 2016</a></b></td>
+							<td>3 ways to expand VIA LG potential</td>
+							<td>Julio 10 2016</td>
+							<td>Orlando, FL, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://rsatechfest.com/">RSA Tech Fest 2016</a></b></td>
+							<td>Overcoming Challenges in Archer implementation</td>
+							<td>Julio 10 2016</td>
+							<td>Orlando, FL, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.scs-day.com/">Supply Chain Security Day 2016</a></b></td>
+							<td>Los retos ante las amenazas cibernéticas ante la complejidad de las cadenas de suministro</td>
+							<td>Mayo 12 2016</td>
+							<td>Monterrey, NL, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.idclatin.com/events/securitymex15/agenda.html">IDC Mexico Next-Gen Security Conference 2015</a></b></td>
+							<td>Gestión efectiva de vulnerabilidades: Habilitando la empresa digital segura</td>
+							<td>Junio 24 2015</td>
+							<td>Ciudad de México, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.amcham.org.mx/events">American Chamber Guadalajara Chapter - 2nd Guadalajara Business Security Conference: CYBERSECURITY</a></b></td>
+							<td>Dispositivos Móviles: Habilitando a la empresa digital de una forma segura</td>
+							<td>Junio 16 2015</td>
+							<td>Guadalajara, Jal, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://www.bsecureconference.com.mx/2014/mty">8th b:Secure Conference Monterrey: Identidad Social</a></b></td>
+							<td>El Programa de Seguridad de Aplicaciones de Hoy</td>
+							<td>Junio 19 2014</td>
+							<td>Monterrey, NL, México</td>
+						</tr>
+						<tr>
+							<td><b><a href = "https://starwest.techwell.com/">StarWest 2013</a></b></td>
+							<td>The future of testing</td>
+							<td>Octubre 2 2013</td>
+							<td>Anaheim, CA, USA</td>
+						</tr>
+						<tr>
+							<td><b><a href = "http://bsecureconference.com.mx/2013/pdf/leonel_navarro.pdf">10th b:Secure Conference: La liga de la seguridad</a></b></td>
+							<td>Consideraciones clave en seguridad de información: Cloud,Virtualización,Móvil</td>
+							<td>Julio 4 2013</td>
+							<td>Ciudad de México, México</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "container" id = "videos">
+		<div class = "row">
+			<br /><h1 style = "color: #58595b; font-size: 1.4em">Vídeos</h1>
+			<hr style="position:relative; float: left; border:solid  #000000; line-height: 3px; width: 50px; margin-bottom: 0px;"></hr><br /><br />
+		</div>
+		<div class = "row">
+			<div class = "col-md-4">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PeytN8gf0ts"></iframe>
+				</div>
+				<div class = "caption">
+					<h1><b>RSA Conference Abu Dhabi 2016</b></h1>
+					<p>Quick Look: Maximizing security and compliance through Digital Third Party Risk Management<br />
+					<i>Noviembre 15 2016</i>
+					</p>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WF4sjJ3gbgY"></iframe>
+				</div>
+				<div class = "caption">
+					<h1><b>RSA Conference San Francisco 2017</b></h1>
+					<p>The State of Digital Supplier Risk Management: In Partners We Trust<br />
+					<i>Febrero 15 2017</i>
+					</p>
+				</div>
+			</div>
+			<div class = "col-md-4">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mGH2d2L1r3Y"></iframe>
+				</div>
+				<div class = "caption">
+					<h1><b>Expansión: en alianza con CNN</b></h1>
+					<p>Las 30 promesas 2014 de Expansión: Leonel Navarro | Expansión<br />
+					<i>Abril 27 2014</i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<br /><br /><br />
+	
+	<div class = "container">
+		<div class = "row">
+			<div class = "col-md-4"><p style = "margin-bottom: 0px; text-align: left; color: black; font-size: 1em;">Creada por Sergio Camilo  <a href = "pdf/por_ser_cam.pdf" style = "margin: 0px"><img src ="img/pdf.png" style = "height: 30px; width: 30px"></img></a></p></div>
+			<div class = "col-md-4"></div>
+			<div class = "col-md-4"></div>
+		</div>
+	</div>
+</body>
+</html>

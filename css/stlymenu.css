@@ -1,0 +1,132 @@
+			@font-face {
+				font-family: "Trebuchet";
+				src: url(../fonts/Trebuchet.ttf) format("truetype");
+			}
+			@keyframes fadeIn{
+				from {
+					opacity: 0;
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+			li{
+				cursor: pointer;
+			}
+			.fadeIn{
+				animation-name: fadeIn;
+				animation-duration: 4s;
+			}
+			h1{
+				font-family: "Trebuchet",sans-serif;
+				text-transform:uppercase;
+				font-weight:700;
+				line-height: 28px;
+				letter-spacing: 2px;
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font: inherit;
+				vertical-align: top;
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+			}
+			p {
+  				margin-bottom: 40px; /*Pie de pagina*/
+			}
+							
+			body{
+				background-color: white;
+			}
+			
+				
+			.titulo { /*Color y Tipo de Letra de Titulos*/
+				color: #E87511;
+				font-size: 24px;
+				font-family: Arial, Helvetica, sans-serif;
+				
+			}
+			#arriba:hover{
+				cursor: pointer;
+			}
+			.text{ /*Color y Texto*/
+				font-size: 12px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.mid { /*Opciones de pie de pagina*/
+				font-size: 9px;
+				border:thin;
+				margin:auto;
+				text-align:center;
+				height:50px;
+				width:100%;
+				background-color:#FF8000;
+				color:#FFFFFF;
+			}
+			.titulogo{
+				color: orange;
+				font-size:30px;
+				font-weight: bold;
+			}
+			.titulotext{
+				color: white;
+				font-size:30px;
+				font-weight: bold;
+			}
+			
+			.texto{
+				color: white;
+				font-size: 15px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			
+			.informacion1{
+				float: right;
+			}
+			
+			.formul{
+				float: left;				
+			}
+			
+			.contacto{
+				width:973px;
+				margin: 0 auto;
+				overflow:hidden; 
+				padding:30px 0 37px 0;
+			}
+			
+			#map {
+				width: 900px;
+				height: 250px;
+			}
+	
+			.note{left:29px;
+			margin-top:-36px;
+			position:absolute;
+			top:50%;
+			}
+			
+			.box1__ .note{left:20px;
+			top:98%;
+			}
+			
+			.box1__ .note span{font-size:11px;
+			font-weight:400;
+			padding-left:3px;
+			}
+			/****************************aside************************/
+			.border-right-2 {border-right:#c0cdd3 1px solid; color:black;}
+			dl.adrss { margin:1px 0 18px 0;}
+			dl.adrss dt {line-height:24px; margin-bottom:3px;}
+			dl.adrss dd span { width:56px; text-align:right; display:block; float:left; margin-right:12px;}
+			dl.adrss dd {}
+			dl.adrss dd a {}
+			dl.adrss dd a:hover {}
+			.soc-icons {overflow:hidden; margin-top:6px;}
+			.soc-icons a {display:inline-block; float:left; margin-right:3px;}
+			.soc-icons a:hover img {opacity:0.7;}*/
